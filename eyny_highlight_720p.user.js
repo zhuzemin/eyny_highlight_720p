@@ -11,7 +11,7 @@
 // @license     CC Attribution-ShareAlike 4.0 International; http://creativecommons.org/licenses/by-sa/4.0/
 // ==/UserScript==
 var config = {
-    'debug': true
+    'debug': false
 }
 var debug = config.debug ? console.log.bind(console)  : function () {
 };
