@@ -8,7 +8,7 @@
 // @include     http://video.eyny.com/*/tag/*
 // @include     http://video.eyny.com/playlist?list=*
 // @include     http://video.eyny.com/tag/*
-// @version     1.1
+// @version     1.2
 // @grant       GM_xmlhttpRequest
 // @run-at      document-start
 // @author      zhuzemin
@@ -46,7 +46,7 @@ function MainWorker(){
         var resolution=img_box.querySelectorAll("font")[1].innerText;
         if(resolution=="720"){
             debug("Highlight.");
-            img_box.className+=" glowbox";
+            img_box.querySelector('p').className+=" glowbox";
         }
     }
 }
@@ -72,7 +72,7 @@ function HandlePlaylist(divs) {
                 var resolution = Sub_img_box.querySelectorAll("font")[1].innerText;
                 if (resolution == "720") {
                     debug("Highlight.");
-                    img_box.className += " glowbox";
+                    img_box.querySelector('p').className += " glowbox";
                 }
                 break;
             }
