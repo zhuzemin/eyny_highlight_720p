@@ -1,8 +1,12 @@
 // ==UserScript==
 // @name        eyny_highlight_720p
+// @name:zh-CN         eyny_highlight_720p
+// @name:zh-TW         eyny_highlight_720p
 // @namespace   eyny_highlight_720p
 // @supportURL  https://github.com/zhuzemin
 // @description video.eyny.com highlight 720p video
+// @description:zh-TW  video.eyny.com highlight 720p video
+// @description:zh-CN video.eyny.com highlight 720p video
 // @include     http://video.eyny.com/channel/*
 // @include     http://video.eyny.com/*/playlist?list=*
 // @include     http://video.eyny.com/*/tag/*
