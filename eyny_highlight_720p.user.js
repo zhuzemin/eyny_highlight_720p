@@ -12,7 +12,7 @@
 // @include     http://video.eyny.com/*/tag/*
 // @include     http://video.eyny.com/playlist?list=*
 // @include     http://video.eyny.com/tag/*
-// @version     1.2
+// @version     1.21
 // @grant       GM_xmlhttpRequest
 // @run-at      document-start
 // @author      zhuzemin
@@ -32,7 +32,7 @@ class ObjectRequest{
         this.url = href;
         this.data=null,
             this.headers = {
-                'User-agent': 'Mozilla/4.0 (compatible) Greasemonkey',
+                'User-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
                 //'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                 'Referer': window.location.href,
@@ -76,9 +76,9 @@ function HandlePlaylist(divs) {
                 var resolution = Sub_img_box.querySelectorAll("font")[1].innerText;
                 if (resolution == "720") {
                     debug("Highlight.");
-                    img_box.querySelector('p').className += " glowbox";
+                    img_box.className += " glowbox";
+                    break;
                 }
-                break;
             }
         }
         if(count<divs.length){
